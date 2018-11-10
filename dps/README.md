@@ -1,17 +1,13 @@
+
+
 Запустить приложение
+  cd dps/
   docker-compose up --build -d
 
 Команды:
   docker-compose exec web python manage.py set_data -----> создать случайные данные для теста приложения
 
 urls API:
-  api/ ^stations/$ [name='station-list']
-  api/ ^stations\.(?P<format>[a-z0-9]+)/?$ [name='station-list']
-  api/ ^stations/(?P<pk>[^/.]+)/$ [name='station-detail']
-  api/ ^stations/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$ [name='station-detail']
-  api/ ^$ [name='api-root']
-  api/ ^\.(?P<format>[a-z0-9]+)/?$ [name='api-root']
-  api/ api-auth/
   пример: http://0.0.0.0:3434/api/stations/1/,
           http://0.0.0.0:3434/api/stations/1/?format=json формат(json)
 
