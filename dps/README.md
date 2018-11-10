@@ -1,7 +1,6 @@
 
 
 Запустить приложение
-  cd dps/
   docker-compose up --build -d
 
 Команды:
